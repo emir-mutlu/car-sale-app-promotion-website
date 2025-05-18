@@ -1,0 +1,84 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #0066cc, #e63946, #1d3557);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #e63946;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-dark {
+  background-color: #1d3557;
+  border-color: #1d3557;
+}
+
+.btn-dark:hover {
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+.btn-outline-dark:hover {
+  background-color: #e63946;
+  border-color: #e63946;
+  color: white;
+}
+
+.card-header {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.display-5, .display-4 {
+  font-weight: 700 !important;
+  color: #f8f9fa;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-body-emphasis {
+  color: #1d3557 !important;
+}
+
+.icon-square {
+  background-color: #e63946 !important;
+  color: white !important;
+  transition: transform 0.3s ease;
+}
+
+.icon-square:hover {
+  transform: rotate(10deg);
+}

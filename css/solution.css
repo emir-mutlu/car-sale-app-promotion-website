@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #FF5733;
+  --secondary-color: #33CFFF;
+  --accent-color: #FFC300;
+  --dark-color: #2C3E50;
+  --light-color: #ECF0F1;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-color);
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  background-color: var(--light-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-square:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border: 4px solid var(--secondary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: var(--light-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.btn-dark {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #ff5252;
+  border-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.btn-outline-dark {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+#features {
+  background-color: var(--light-color);
+}
+
+#testimonial {
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+}
+
+#testimonial .text-body-emphasis {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.pricing-card-title {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+  transform: translateX(5px);
+}
+
+/* Custom styles for the car showcase */
+.car-showcase {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.car-showcase img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.car-showcase:hover img {
+  transform: scale(1.05);
+}
